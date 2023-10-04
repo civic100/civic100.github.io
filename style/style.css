@@ -8,6 +8,7 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    font-size: 20px;
 }
 
 body{
@@ -140,6 +141,25 @@ body.dark-mode {
     cursor: pointer;
 }
 
+/* Agrega estilos para la descripción emergente */
+.skills .skill-description {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.70);
+    padding: 10px;
+    margin-left: -65px;
+    margin-top: 11px;
+    z-index: 1;
+    width: 20vh;
+    color: black;
+}
+
+/* Muestra la descripción emergente al pasar el ratón por encima */
+.skills .skill:hover .skill-description {
+    display: block;
+}
+
 .skill1:hover {
     background-color: #007396; 
     color: var(--color-white);
@@ -182,6 +202,10 @@ body.dark-mode {
         width: 20vw;
         padding:1%;
     }
+}
+
+#imagen-principal{
+    margin-top: 20px;
 }
 
 .texto-verde{
@@ -282,18 +306,25 @@ body.dark-mode {
 
     & div{
         width: 64vw;
-        padding:1%;
     }
 
     & .valoraciones-texto{
-        margin-top: -50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        & h3{
+            border-bottom: solid 3px #FFA500;
+            display: inline-block;
+            width: auto;
+            height: auto;
+        }
+
     }
 
 }
 
 footer{
     background-color: rgb(35, 47, 62);
-    height: 10vh;
     & .footer-logos{
         display: flex;
         justify-content: center;
