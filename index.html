@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo/amazon-logo-1.png" type="img/amazon-logo-1">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <title>victorzon.es</title>
+</head>
+<body class="light-mode">
+    <header>
+        <div class="container-menu">
+            <div class=" menu div1">
+                <img src="img/logo/amazon-logo-12.png" alt="amazon-logo">
+            </div>
+            
+            <div class=" menu div2"> 
+                <span>
+                    <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <div class="text">
+                    <p>Hola</p>
+                    <p><strong>Soy Victor</strong></p>
+                </div>
+            </div>
+
+            <div class=" menu div3"> 
+                <!-- Desplegable -->
+                <select id="desplegable">
+                    <option value="opcion1">Java</option>
+                    <option value="opcion2">SQL</option>
+                    <option value="opcion3">Mongo DB</option>
+                    <option value="opcion4">HTML/CSS/JS</option>
+                </select>
+                <!-- Barra de búsqueda -->
+                <input type="text" id="busqueda" placeholder="Buscar..." onkeyup="filtrarDesplegable()">
+                <a href=""><i class="fas fa-search search-icon"></i></a>
+            </div>
+
+            <div class="menu div4">
+                <!-- Contenedor del selector personalizado -->
+                <div class="custom-select">
+                    <!-- Menú desplegable personalizado -->
+                    <div class="options">
+                        <!-- Opción 1 con imagen y texto -->
+                        <div class="option">
+                            <img src="img/flags/java-logo.png" alt="Java">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" menu div5"> 
+                <div>
+                    <a href="https://github.com/civic100" target="_blank">
+                        Visita mis repo <br/>
+                        <strong>Github</strong>
+                    </a>
+                </div>
+            </div>
+
+            <div class=" menu div6">
+                <div>
+                    <a href="https://www.linkedin.com/in/lopez-lopez-victor/" target="_blank">
+                        Este es mi <br/>
+                        <strong>Linkedin</strong>
+                    </a>
+                </div>
+            </div>
+            <div class=" menu div7">
+                <div>
+                    <a href="https://www.credly.com/users/victor-lopez.08e71ff6/badges" target="_blank">
+                        <i class="fas fa-shopping-cart"></i>
+                        Certificados
+                    </a>
+                </div>
+            </div>
+          
+            <button  class="toggle-mode-dark" id="toggle-mode">🌕</button>
+
+        </div>
+        <div class="nav-main">
+            <div class="skills">
+                <div class="skill1">Java</div>
+                <div class="skill2">JavaScript</div>
+                <div class="skill3">SpringBoot</div>
+                <div class="skill4">HTML</div>
+                <div class="skill5">CSS</div>
+                <div class="skill6">SQL</div>
+                <div class="skill7">React</div>
+                <div class="skill8">Bootstrap</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-main">
+
+            <div class="imgages-my">
+                <div class="images-laterales">
+                    <img data-src="img/person/sol.jpg"  src="img/person/sol.jpg" alt="sol.jpg">
+                    <img data-src="img/person/espalda.JPG"  src="img/person/espalda.JPG" alt="espalda.JPG">
+                    <img data-src="img/person/cara.jpg" src="img/person/cara.jpg" alt="cara.jpg">
+                    <img data-src="img/person/joven.JPG" src="img/person/joven.JPG" alt="joven.JPG">
+                    <img data-src="img/person/bici.jpg" src="img/person/bici.jpg" alt="bici.jpg">
+                </div>
+                <div class="images-principal">
+                    <img id="imagen-principal" src="img/person/sol.jpg" alt="sol.jpg">
+                </div>
+            </div>
+
+            <div class="content">
+                <h3>
+                    Recién graduado como desarrollador web, tomé la decisión de dejar mi último trabajo para buscar un enfoque especial en el framework de Spring Boot (java), React y Angular. Durante mi proyecto final de curso, tuve la oportunidad de trabajar con estas herramientas.
+                    Actualmente, me encuentro realizando un bootcamp de java, en la fundación esplai - ciudadanía comprometida.
+                </h3>
+                <div class="certificados-container">
+                    <img src="img/logo/microsoft-logo-png-2420.png" alt="microsoft.png">
+                    <p class="texto-verde">Certificados</p>
+                </div>
+                <a href="https://www.credly.com/badges/0aa8b41c-99db-4f17-9d3d-ec175c7dc2e0" target="_blank">Microsoft Certified: Azure Data Fundamentals</a><br/>
+            
+                <a href="https://www.credly.com/badges/402e647c-44f1-46e0-b4d9-fe7cca9c9b18" target="_blank">Microsoft Certified: Azure AI Fundamentals</a><br/>
+           
+                <a href="https://www.credly.com/badges/77cbf3ef-51e4-41be-9ece-28b22e405118" target="_blank">Microsoft Certified: Security, Compliance, and Identity Fundamentals</a><br/>
+              
+                <a href="https://www.credly.com/badges/dc3dd918-2acb-41c3-bdb2-09f72e530287" target="_blank">Microsoft Certified: Azure Fundamentals</a>
+       
+            </div>
+
+            <div class="more-info">
+                <strong><p>Educación</p></strong>
+                <p>Instituto público La Pineda</p>
+                <p>CFGS-Desarrollo de Aplicaciones en entornos web</p>
+                <p>CFGS-Sistemas de Telecomunicaciones e Informáticos</p>
+                <div class="botones-info">
+                    <a class="boton" href="document/cv.pdf" target="_blank">CV</a> 
+                    <a class="boton" href="https://www.linkedin.com/in/lopez-lopez-victor/" target="_blank">Visitar Linkedin</a>
+                    <a class="boton" href="https://github.com/civic100" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="container-valoraciones">
+
+            <div class="valoreciones-estrellas">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+            </div>
+
+            <div class="valoraciones-texto">
+                <h3>Experiencia</h3>
+                <img src="img/logo/dortoka.webp" alt="">
+                <h4>Full-stack Developer</h4>
+                <p>
+                    DORTOKA disseny S.L. · Jornada parcialDORTOKA disseny S.L. · Jornada parcial<br/>
+                    jun. 2022 - abr. 2023 · 11 mesesjun. 2022 - abr. 2023 · 11 meses<br/>
+                    Carrer del Vinyar, 53-55, local, 08016 Barcelona · Presencial.
+                </p>
+                <p>
+                    Trabajé en la empresa Dortoka Disseny en Barcelona, la cual está especializada en agregar valor a través del<br/>
+                    análisis, diseño, implementación y desarrollo de un posicionamiento estratégico y operacional global que se<br/>
+                    ajusta a los objetivos y necesidades previamente definidos.Trabajé en la empresa Dortoka Disseny en Barcelona, la cual está especializada en agregar valor a través del análisis, diseño, implementación y desarrollo de un posicionamiento estratégico y operacional global que se ajusta a los objetivos y necesidades previamente definidos.
+                </p>
+                <p> 
+                    <strong>Aptitudes: </strong>WordPress · Optimización para motores de búsqueda (SEO) · Control de versiones · Filezilla · intelij · JavaScript · PHP
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-logos">
+            <a href="https://github.com/civic100" target="_blank"> <img src="img/logo/github-logo_icon.png" alt=""> </a> 
+            <a href="https://www.linkedin.com/in/lopez-lopez-victor/" target="_blank"> <img src="img/logo/linkedin_icon.png" alt=""> </a> 
+        </div>
+    </footer>
+</body>
+   <script src="js/script.js"></script>
+</html>
